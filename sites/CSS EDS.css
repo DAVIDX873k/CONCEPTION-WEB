@@ -1,0 +1,329 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, header, div, section, article, footer, span {
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	margin:auto 5% auto 5%;
+	background-image: url(nouveau.jpg);
+	}
+
+ul, li {
+	list-style-type:none;
+}
+
+[class*="col-"] {
+	width:100%;
+}
+
+#portada {
+	display: none;
+}
+
+.botonImage {
+	width: 20px;
+	height: 20px;
+}
+
+#introduction {
+	font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 700px) {
+	.col-m-1 {width: 8.33%;}
+	.col-m-2 {width: 16.66%;}
+	.col-m-3 {width: 25%;}
+	.col-m-4 {width: 33.33%;}
+	.col-m-5 {width: 41.66%;}
+	.col-m-6 {width: 50%;}
+	.col-m-7 {width: 58.33%;}
+	.col-m-8 {width: 66.66%;}
+	.col-m-9 {width: 75%;}
+	.col-m-10 {width: 83.33%;}
+	.col-m-11 {width: 91.66%;}
+	.col-m-12 {width: 100%;}
+	#portada {display: block;}
+	body {font-size:20px;}
+	.botonImage {width: 35px; height: 35px;}
+	.trimestre {min-height:20px;}
+	.trimestre {font-size: 20px;}
+	.lecon {min-height:30px;}
+	.titre, .lecon {font-size: 20px;}
+}
+
+@media only screen and (min-width: 1150px) {
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+	#portada {display: block;}
+	body {font-size:25px;}
+	.botonImage {width: 50px; height: 50px;}
+	.presentacion, .resumen,.trimestre{min-height:45px;}
+	.trimestre {font-size: 25px;}
+	.lecon {min-height:50px;}
+	.titre, .lecon {font-size: 25px;}
+}
+
+div, footer, header, nav {
+	float:left;
+	padding: 5px;
+	margin: 5px auto 5px auto;
+	display: block;
+}
+
+.row::after, header::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+header {
+	color: #ffffff;
+	padding: 5px;
+	display: block;
+	background: -webkit-linear-gradient(left, rgba(255,255,102,0.5), rgba(51,204,204,1), rgba(255,255,102,0.5)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, rgba(255,255,102,0.5), rgba(51,204,204,1), rgba(255,255,102,0.5)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, rgba(255,255,102,0.5), rgba(51,204,204,1), rgba(255,255,102,0.5)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, rgba(255,255,102,0.5), rgba(51,204,204,1), rgba(255,255,102,0.5)); /* Standard syntax */
+}
+
+#titre {
+	font-size: 3rem;
+	font-weight:bold;
+	text-align: center;
+	color:white;
+	text-shadow:1px 1px 0px rgba(230,230,230,1),
+	2px 2px 0px rgba(200,200,200,1),
+	3px 3px 0px rgba(180,180,180,1),
+	4px 4px 0px rgba(160,160,160,1),
+	5px 5px 0px rgba(0,0,0,1),
+	8px 8px 20px rgba(0,0,0,0.5);
+}
+
+nav {
+	margin: 0;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-size: 1.2rem;
+}
+
+
+n1av li {
+	padding: 8px;
+	margin-bottom: 7px;
+	background-color: #33b5e5;
+	color: #ffffff;
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.12), 1px 2px 2px rgba(0, 0, 0, 0.24);
+	border-radius: 5px;
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.9), 0px 0px 4px rgba(0,0,0,0.5), 2px 2px 4px rgba(0,0,0,1);
+	cursor:pointer;
+}
+
+nav a {
+	text-decoration:none;
+}
+
+nav li:hover {
+	background-color: #0099cc;
+}
+
+nav span {
+	margin-right: 5px;
+}
+
+nav span img {
+	width: 30px;
+	height: 20px;
+}
+
+#portada {
+	margin: 5px auto;
+	padding: 2px;
+	width:100%;
+	height:auto;
+	}
+
+#contenu {
+	position:relative;
+}
+
+footer {
+	background-color: lightgray;
+	color: black;
+	text-align: left;
+	font-size: 0.8rem;
+	padding: 3px 15px;
+}
+
+.trimestre {
+	background-color: #CCC;
+	border: darkblue solid thin;
+	border-radius: 10px;
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.12), 1px 2px 2px rgba(0, 0, 0, 0.24);
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+	color: darkblue;
+	min-height: 90px;
+	margin-bottom: 0;
+	margin-top: 5px;
+}
+
+.lecon{
+	position:relative;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+
+
+.lecon {
+	border: black solid thin;
+	background-color: white;
+	min-height:90px;
+}
+.titre {
+	padding: 3px;
+	text-align: left;
+	font-weight:bold;
+	font-size:1em;
+	text-shadow: 0px 0px 10px rgba(255, 255, 0, 0.67);
+}
+
+.date {
+	font-size:0.75em;
+	text-shadow: none;
+}
+
+
+.presentacionPPTX {
+	border: black solid thin;
+	padding: 10px;
+	text-align: center;	
+	width: 16.6666%;
+}
+
+.presentacionPPTX{
+	width: 25%;
+}
+
+.presentacionPPTX_fr {
+	width: 14.28%;
+}
+
+.presentacionPPTX_hr{
+	width: 12.5%;
+}
+
+.presentacionPPTX3{
+	width: 50%;
+}
+
+.presentacionPPTX_tm{
+	width: 100%;
+}
+
+.presentacionPPTX {
+	background-color: #C6C;
+	cursor:pointer;
+}
+
+.presentacionPPTX:hover {
+	background-color: white;
+}
+@-webkit-keyframes animacion_vm {
+	0%   {transform:scale(1.1);}
+    1%   {transform:scale(1.1);}
+    10%  {transform:scale(1.15);}
+    20%  {transform:scale(1.2);}
+    30%  {transform:scale(1.25);}
+    40%  {transform:scale(1.3);}
+    50%  {transform:scale(1.35);}
+    60%  {transform:scale(1.4);}
+	70%  {transform:scale(1.45);}
+    80%  {transform:scale(1.5);}
+    90%  {transform:scale(1.55);}
+    100% {transform:scale(1.6);}
+}
+@keyframes animacion_vm {
+	0%   {transform:scale(1.1);}
+    1%   {transform:scale(1.1);}
+    10%  {transform:scale(1.15);}
+    20%  {transform:scale(1.2);}
+    30%  {transform:scale(1.25);}
+    40%  {transform:scale(1.3);}
+    50%  {transform:scale(1.35);}
+    60%  {transform:scale(1.4);}
+	70%  {transform:scale(1.45);}
+    80%  {transform:scale(1.5);}
+    90%  {transform:scale(1.55);}
+    100% {transform:scale(1.6);}
+}
+
+#contact {
+	font-size: 2rem;
+	alignment-baseline: middle;
+	background-color: lightgray;
+	border: maroon solid 2px;
+	border-radius: 10px;
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.12), 1px 2px 2px rgba(0, 0, 0, 0.24);
+	text-align: center;
+}
+
+#contact img {
+	width: 60 px;
+	height: 60px;
+}
+
+.createur {
+	font-size: 1.5rem;
+	font-weight: bolder:
+	color: blue;
+}
+
+@font-face{
+	font-family:"fTamil";
+	src:url('TamilBible.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'fTamil';
+    src: url('tamilbible-webfont.eot');
+    }
+
+@font-face {
+	font-family: "fMyanmar";
+	src: url("zawgyioneregular.ttf") format("truetype"), 
+		url("zawgyioneregular.svg") format("svg"),
+		url("zawgyioneregular.woff") format("woff");
+	src: url("zawgyioneregular.eot");
+}
+
+div.separador {
+}
+@font-face {
+    font-family: 'sree_krushnadevarayaregular';
+    src: url('sree_krushnadevaraya-webfont.eot');
+    }
+
+
